@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
          -moz-osx-font-smoothing: grayscale;
     }
+    body{
+        font-family:'Montserrat',sans-serif;
+    }
 `;
 
 export default GlobalStyle;
