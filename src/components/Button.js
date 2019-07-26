@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   background-color: ${props => props.secondary || '#fff'};
   display: block;
   border: ${props => props.border || 'none'};
-  margin: 10px 0 7px;
+  margin: 15px auto 7px;
   padding: 12px 0;
   width: 80%;
   font-size: 16px;
