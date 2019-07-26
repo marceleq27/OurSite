@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         font-family:'Montserrat',sans-serif;
-        height:500vh;
+        height:1000vh;
     }
 `;
 

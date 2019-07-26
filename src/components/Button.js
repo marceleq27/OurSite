@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   border: ${props => props.border || 'none'};
   margin: 15px auto 7px;
   padding: 12px 0;
-  width: 80%;
+  width: ${props => props.width || `${80}%`};
   font-size: 16px;
   border-radius: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -19,9 +19,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ children, secondary, black, border }) => {
+const Button = ({ children, secondary, black, border, width }) => {
   return (
-    <StyledButton secondary={secondary} black={black} border={border}>
+    <StyledButton secondary={secondary} black={black} border={border} width={width}>
       {children}
     </StyledButton>
   );
@@ -32,11 +32,13 @@ Button.propTypes = {
   secondary: PropTypes.string,
   black: PropTypes.string,
   border: PropTypes.string,
+  width: PropTypes.string,
 };
 Button.defaultProps = {
   children: '',
   secondary: '',
   black: '',
   border: '',
+  width: '',
 };
 export default Button;
